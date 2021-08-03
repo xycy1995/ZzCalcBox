@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="ico">
+    <file>ico/gnu.png</file>
+    <file>ico/update.png</file>
+    <file>ico/xycy.png</file>
+    <file>ico/ZzCalcBox.png</file>
+  </qresource>
+</RCC>

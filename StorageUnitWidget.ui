@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>100</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>100</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>300</width>
+    <height>100</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>存储单位</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="ico.qrc">
+    <normaloff>:/ico/ico/ZzCalcBox.png</normaloff>:/ico/ico/ZzCalcBox.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="lineEdit_convert_befotr"/>
+   </item>
+   <item row="0" column="2">
+    <widget class="QComboBox" name="combo_convent_before">
+     <item>
+      <property name="text">
+       <string>b</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>B</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>KB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>GB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>TB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>PB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>EB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ZB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>YB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DB</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>转换后</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>转换前</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="QPushButton" name="btn_convert">
+     <property name="text">
+      <string>转换</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QComboBox" name="combo_convent_after">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>b</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>B</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>KB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>GB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>TB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>PB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>EB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ZB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>YB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DB</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="lineEdit_convert_after">
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="frame">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="placeholderText">
+      <string>此处显示计算结果</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="ico.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btn_convert</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>btn_convert_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>121</x>
+     <y>84</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>7</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>btn_convert_clicked()</slot>
+ </slots>
+</ui>
