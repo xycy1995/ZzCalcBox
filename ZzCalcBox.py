@@ -1,6 +1,8 @@
 import sys
+
 # 引入RC资源
 import ico_rc
+
 # 引入PySide包
 from PySide6 import QtWidgets
 from PySide6.QtWidgets import QMessageBox
@@ -19,6 +21,7 @@ import ParityCheckWidget
 import BitRateWidget
 import ImageWidget
 import AudioWidget
+
 # 引入基础计算库
 import About
 import Ascii
