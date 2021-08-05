@@ -117,15 +117,15 @@ class MyAboutWidget(QtWidgets.QWidget, AboutWidget.Ui_Dialog):
 
     @staticmethod
     def btn_version_clicked():
-        About.version()
+        About.app_update()
 
     @staticmethod
     def btn_author_clicked():
-        About.author()
+        About.app_author()
 
     @staticmethod
     def btn_license_clicked():
-        About.license()
+        About.app_license()
 
 
 class MyStorageUnitWidget(QtWidgets.QWidget, StorageUnitWidget.Ui_Form):
