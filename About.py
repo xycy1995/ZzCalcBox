@@ -30,7 +30,7 @@ def ui_version() -> str:
     """
     返回软件版本
     """
-    return '1.0.0'
+    return '1.0.1'
 
 
 def version():
