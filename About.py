@@ -1,8 +1,8 @@
 """
   @FileName   : About.py
   @Abstract   : 关于软件的一些信息
-  @Create Date: 2021-8-3 16:25
-  @Version    : v0.0.2
+  @Create Date: 2021-8-5 12:50
+  @Version    : v0.0.3
   @Author     : 斜影重阳xycy
   @Contact    : https://space.bilibili.com/178094634
   @License    : GNU General Public License, version 3 (GPL-3.0)
@@ -23,25 +23,27 @@
   along with this program.If not, see < https://www.gnu.org/licenses/>.
 """
 
-import webbrowser
+import webbrowser  # 浏览器窗口操作库
+
+app_version = '1.0.2'
 
 
 def ui_version() -> str:
     """
     返回软件版本
     """
-    return '1.0.1'
+    return app_version
 
 
-def version():
+def app_update():
     """
     打开更新页面（后期做成自动检测）
     """
-    url = 'https://github.com/xycy1995/ZzCalcBox'
+    url = 'https://github.com/xycy1995/ZzCalcBox/releases'
     webbrowser.open(url)
 
 
-def author():
+def app_author():
     """
     打开作者B站空间
     """
@@ -49,7 +51,7 @@ def author():
     webbrowser.open(url)
 
 
-def license():
+def app_license():
     """
     打开许可证说明页
     """
